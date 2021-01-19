@@ -1,0 +1,559 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PREFIX : &lt;http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+SELECT ?nama_sepeda ?jenis?merk_sepeda
+	WHERE { ?sepeda:nama_sepeda ?nama_sepeda. ?sepeda:jenis ?jenis.?sepeda:memilikiMerk?merk.?merk:merk_sepeda?merk_sepeda. }</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PREFIX : &lt;http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+SELECT ?karakter?nama_sepeda ?jenis?merk_sepeda
+	WHERE { ?sepeda:nama_sepeda ?nama_sepeda. ?sepeda:jenis ?jenis.?sepeda:memilikiMerk?merk.?merk:merk_sepeda?merk_sepeda.?sepeda:memilikiKarakteristik?karakteristik.?karakteristik:karakter?karakter. }</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PREFIX : &lt;http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+SELECT ?nama_sepeda ?jenis?merk_sepeda
+	WHERE { ?sepeda:nama_sepeda ?nama_sepeda. ?sepeda:jenis ?jenis.?merk:merk_sepeda?merk_sepeda. }</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#karakteristik"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#merk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#offroad"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#onroad"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#memilikiKarakteristik"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#memilikiMerk"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#jenis"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#karakter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#merk_sepeda"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#nama_sepeda"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#casual"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#federal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#freestyle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#giant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#klasik"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#modern_kuat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#pasific"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#polygon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#race"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#reebok"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#santaCruz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_balap"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_bmx"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_fixie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_gunung"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_lipat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_onthel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_touring"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#tabibitho"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#trek"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#united"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#wimcycle"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#offroad"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#onroad"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#karakteristik"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#casual"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#merk"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#federal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#karakteristik"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#freestyle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#merk"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#giant"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#karakteristik"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#klasik"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#karakteristik"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#modern_kuat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#merk"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#pasific"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#merk"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#polygon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#karakteristik"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#race"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#merk"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#reebok"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#merk"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#santaCruz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#onroad"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_balap"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#onroad"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_bmx"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#onroad"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_fixie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#offroad"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_gunung"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#onroad"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_lipat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#onroad"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_onthel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#offroad"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_touring"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#merk"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#tabibitho"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#merk"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#trek"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#merk"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#united"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#merk"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#wimcycle"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#memilikiKarakteristik"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_balap"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#race"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#memilikiMerk"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_balap"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#federal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#memilikiMerk"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_balap"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#trek"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#memilikiKarakteristik"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_bmx"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#freestyle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#memilikiMerk"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_bmx"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#tabibitho"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#memilikiMerk"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_bmx"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#united"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#memilikiMerk"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_bmx"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#pasific"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#memilikiMerk"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_bmx"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#wimcycle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#memilikiMerk"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_bmx"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#reebok"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#memilikiKarakteristik"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_fixie"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#casual"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#memilikiMerk"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_fixie"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#federal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#memilikiKarakteristik"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_gunung"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#modern_kuat"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#memilikiMerk"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_gunung"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#polygon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#memilikiMerk"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_gunung"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#wimcycle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#memilikiKarakteristik"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_lipat"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#casual"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#memilikiMerk"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_lipat"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#pasific"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#memilikiMerk"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_lipat"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#polygon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#memilikiKarakteristik"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_onthel"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#klasik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#memilikiMerk"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_onthel"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#federal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#memilikiKarakteristik"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_touring"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#modern_kuat"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#memilikiMerk"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_touring"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#santaCruz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#memilikiMerk"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_touring"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#polygon"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#karakter"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#casual"/>
+        <Literal datatypeIRI="&xsd;string">biasa digunakan untuk dikendarai di jalan kota kota dan lebih mementingkan ke desain simple tanpa banyak atribut</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#merk_sepeda"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#federal"/>
+        <Literal datatypeIRI="&xsd;string">federal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#karakter"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#freestyle"/>
+        <Literal datatypeIRI="&xsd;string">sering digunakan untuk freestyer dalam berakrobat di arena</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#merk_sepeda"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#giant"/>
+        <Literal datatypeIRI="&xsd;string">giant</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#karakter"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#klasik"/>
+        <Literal datatypeIRI="&xsd;string">terdapat boncengan dan identik desain kuno,</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#karakter"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#modern_kuat"/>
+        <Literal datatypeIRI="&xsd;string">desain terlihat modern di desain dengan teknologi dan untuk onderdil sepeda tahan disegala medan terjal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#merk_sepeda"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#pasific"/>
+        <Literal datatypeIRI="&xsd;string">pasific</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#karakter"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#polygon"/>
+        <Literal datatypeIRI="&xsd;string">kuat dan modern</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#merk_sepeda"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#polygon"/>
+        <Literal datatypeIRI="&xsd;string">polygon</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#karakter"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#race"/>
+        <Literal datatypeIRI="&xsd;string">dipakai untuk sirkuit perlombaan balap, memiliki frame ramping mengutamakan aerodinamis untuk pembalap, sepeda ringan dari pada jenis sepeda onroad ataupun offroad lainnya</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#merk_sepeda"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#reebok"/>
+        <Literal datatypeIRI="&xsd;string">reebok</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#merk_sepeda"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#santaCruz"/>
+        <Literal datatypeIRI="&xsd;string">santa Cruz</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#jenis"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_balap"/>
+        <Literal datatypeIRI="&xsd;string">onroad</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#nama_sepeda"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_balap"/>
+        <Literal datatypeIRI="&xsd;string">sepeda balap</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#jenis"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_bmx"/>
+        <Literal datatypeIRI="&xsd;string">onroad</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#nama_sepeda"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_bmx"/>
+        <Literal datatypeIRI="&xsd;string">sepeda bmx</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#jenis"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_fixie"/>
+        <Literal datatypeIRI="&xsd;string">onroad</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#nama_sepeda"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_fixie"/>
+        <Literal datatypeIRI="&xsd;string">sepeda fixie</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#jenis"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_gunung"/>
+        <Literal datatypeIRI="&xsd;string">offroad</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#nama_sepeda"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_gunung"/>
+        <Literal datatypeIRI="&xsd;string">sepeda gunung</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#jenis"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_lipat"/>
+        <Literal datatypeIRI="&xsd;string">onroad</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#nama_sepeda"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_lipat"/>
+        <Literal datatypeIRI="&xsd;string">sepeda lipat</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#jenis"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_onthel"/>
+        <Literal datatypeIRI="&xsd;string">onroad</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#nama_sepeda"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_onthel"/>
+        <Literal datatypeIRI="&xsd;string">sepeda onthel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#jenis"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_touring"/>
+        <Literal datatypeIRI="&xsd;string">offroad</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#nama_sepeda"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_touring"/>
+        <Literal datatypeIRI="&xsd;string">sepeda touring</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#merk_sepeda"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#tabibitho"/>
+        <Literal datatypeIRI="&xsd;string">tabibitho</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#merk_sepeda"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#trek"/>
+        <Literal datatypeIRI="&xsd;string">trek</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#merk_sepeda"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#united"/>
+        <Literal datatypeIRI="&xsd;string">united</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#karakter"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#wimcycle"/>
+        <Literal datatypeIRI="&xsd;string">casual enjoy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#merk_sepeda"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#wimcycle"/>
+        <Literal datatypeIRI="&xsd;string">wimcycle</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#memilikiMerk"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#memilikiMerk"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#merk"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#jenis"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#karakter"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#karakteristik"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#merk_sepeda"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#merk"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#nama_sepeda"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#jenis"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#karakter"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#merk_sepeda"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#nama_sepeda"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

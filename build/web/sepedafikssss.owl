@@ -1,0 +1,564 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23.owl">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PREFIX : &lt;http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+SELECT ?nama_sepeda ?jenis?merk_sepeda
+	WHERE { ?sepeda:nama_sepeda ?nama_sepeda. ?sepeda:jenis ?jenis.?sepeda:memilikiMerk?merk.?merk:merk_sepeda?merk_sepeda. }</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PREFIX : &lt;http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+SELECT ?karakter?nama_sepeda ?jenis?merk_sepeda
+	WHERE { ?sepeda:nama_sepeda ?nama_sepeda. ?sepeda:jenis ?jenis.?sepeda:memilikiMerk?merk.?merk:merk_sepeda?merk_sepeda.?sepeda:memilikiKarakteristik?karakteristik.?karakteristik:karakter?karakter. }</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PREFIX : &lt;http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+SELECT ?nama_sepeda ?jenis?merk_sepeda
+	WHERE { ?sepeda:nama_sepeda ?nama_sepeda. ?sepeda:jenis ?jenis.?merk:merk_sepeda?merk_sepeda. }</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#karakteristik"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#merk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#offroad"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#onroad"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sepeda"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#memilikiKarakteristik"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#memilikiMerk"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#jenis"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#karakter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#merk_sepeda"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nama_sepeda"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#casual"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#federal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#freestyle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#giant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#klasik"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#modern_kuat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pasific"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#polygon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#race"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#reebok"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#santaCruz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sepeda_balap"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sepeda_bmx"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sepeda_fixie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sepeda_gunung"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sepeda_lipat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sepeda_onthel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sepeda_touring"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tabibitho"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#trek"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#united"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#wimcycle"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#offroad"/>
+        <Class IRI="#sepeda"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#onroad"/>
+        <Class IRI="#sepeda"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#karakteristik"/>
+        <NamedIndividual IRI="#casual"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#merk"/>
+        <NamedIndividual IRI="#federal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#karakteristik"/>
+        <NamedIndividual IRI="#freestyle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#merk"/>
+        <NamedIndividual IRI="#giant"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#karakteristik"/>
+        <NamedIndividual IRI="#klasik"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#karakteristik"/>
+        <NamedIndividual IRI="#modern_kuat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#merk"/>
+        <NamedIndividual IRI="#pasific"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#merk"/>
+        <NamedIndividual IRI="#polygon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#karakteristik"/>
+        <NamedIndividual IRI="#race"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#merk"/>
+        <NamedIndividual IRI="#reebok"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#merk"/>
+        <NamedIndividual IRI="#santaCruz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#onroad"/>
+        <NamedIndividual IRI="#sepeda_balap"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#onroad"/>
+        <NamedIndividual IRI="#sepeda_bmx"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#onroad"/>
+        <NamedIndividual IRI="#sepeda_fixie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#offroad"/>
+        <NamedIndividual IRI="#sepeda_gunung"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#onroad"/>
+        <NamedIndividual IRI="#sepeda_lipat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#onroad"/>
+        <NamedIndividual IRI="#sepeda_onthel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#offroad"/>
+        <NamedIndividual IRI="#sepeda_touring"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#merk"/>
+        <NamedIndividual IRI="#tabibitho"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#merk"/>
+        <NamedIndividual IRI="#trek"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#merk"/>
+        <NamedIndividual IRI="#united"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#merk"/>
+        <NamedIndividual IRI="#wimcycle"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiKarakteristik"/>
+        <NamedIndividual IRI="#sepeda_balap"/>
+        <NamedIndividual IRI="#race"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiMerk"/>
+        <NamedIndividual IRI="#sepeda_balap"/>
+        <NamedIndividual IRI="#federal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiMerk"/>
+        <NamedIndividual IRI="#sepeda_balap"/>
+        <NamedIndividual IRI="#trek"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiKarakteristik"/>
+        <NamedIndividual IRI="#sepeda_bmx"/>
+        <NamedIndividual IRI="#freestyle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiMerk"/>
+        <NamedIndividual IRI="#sepeda_bmx"/>
+        <NamedIndividual IRI="#tabibitho"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiMerk"/>
+        <NamedIndividual IRI="#sepeda_bmx"/>
+        <NamedIndividual IRI="#united"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiMerk"/>
+        <NamedIndividual IRI="#sepeda_bmx"/>
+        <NamedIndividual IRI="#pasific"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiMerk"/>
+        <NamedIndividual IRI="#sepeda_bmx"/>
+        <NamedIndividual IRI="#wimcycle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiMerk"/>
+        <NamedIndividual IRI="#sepeda_bmx"/>
+        <NamedIndividual IRI="#reebok"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiKarakteristik"/>
+        <NamedIndividual IRI="#sepeda_fixie"/>
+        <NamedIndividual IRI="#casual"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiMerk"/>
+        <NamedIndividual IRI="#sepeda_fixie"/>
+        <NamedIndividual IRI="#federal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiKarakteristik"/>
+        <NamedIndividual IRI="#sepeda_gunung"/>
+        <NamedIndividual IRI="#modern_kuat"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiMerk"/>
+        <NamedIndividual IRI="#sepeda_gunung"/>
+        <NamedIndividual IRI="#santaCruz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiMerk"/>
+        <NamedIndividual IRI="#sepeda_gunung"/>
+        <NamedIndividual IRI="#polygon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiMerk"/>
+        <NamedIndividual IRI="#sepeda_gunung"/>
+        <NamedIndividual IRI="#wimcycle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiKarakteristik"/>
+        <NamedIndividual IRI="#sepeda_lipat"/>
+        <NamedIndividual IRI="#casual"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiMerk"/>
+        <NamedIndividual IRI="#sepeda_lipat"/>
+        <NamedIndividual IRI="#pasific"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiMerk"/>
+        <NamedIndividual IRI="#sepeda_lipat"/>
+        <NamedIndividual IRI="#polygon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiKarakteristik"/>
+        <NamedIndividual IRI="#sepeda_onthel"/>
+        <NamedIndividual IRI="#klasik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiMerk"/>
+        <NamedIndividual IRI="#sepeda_onthel"/>
+        <NamedIndividual IRI="#federal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiKarakteristik"/>
+        <NamedIndividual IRI="#sepeda_touring"/>
+        <NamedIndividual IRI="#modern_kuat"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiMerk"/>
+        <NamedIndividual IRI="#sepeda_touring"/>
+        <NamedIndividual IRI="#santaCruz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiMerk"/>
+        <NamedIndividual IRI="#sepeda_touring"/>
+        <NamedIndividual IRI="#polygon"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#karakter"/>
+        <NamedIndividual IRI="#casual"/>
+        <Literal datatypeIRI="&xsd;string">biasa digunakan untuk dikendarai di jalan kota kota dan lebih mementingkan ke desain simple tanpa banyak atribut</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#merk_sepeda"/>
+        <NamedIndividual IRI="#federal"/>
+        <Literal datatypeIRI="&xsd;string">federal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#karakter"/>
+        <NamedIndividual IRI="#freestyle"/>
+        <Literal datatypeIRI="&xsd;string">sering digunakan untuk freestyer dalam berakrobat di arena</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#merk_sepeda"/>
+        <NamedIndividual IRI="#giant"/>
+        <Literal datatypeIRI="&xsd;string">giant</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#karakter"/>
+        <NamedIndividual IRI="#klasik"/>
+        <Literal datatypeIRI="&xsd;string">terdapat boncengan dan identik desain kuno,</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#karakter"/>
+        <NamedIndividual IRI="#modern_kuat"/>
+        <Literal datatypeIRI="&xsd;string">desain terlihat modern di desain dengan teknologi dan untuk onderdil sepeda tahan disegala medan terjal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#merk_sepeda"/>
+        <NamedIndividual IRI="#pasific"/>
+        <Literal datatypeIRI="&xsd;string">pasific</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#karakter"/>
+        <NamedIndividual IRI="#polygon"/>
+        <Literal datatypeIRI="&xsd;string">kuat dan modern</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#merk_sepeda"/>
+        <NamedIndividual IRI="#polygon"/>
+        <Literal datatypeIRI="&xsd;string">polygon</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#karakter"/>
+        <NamedIndividual IRI="#race"/>
+        <Literal datatypeIRI="&xsd;string">dipakai untuk sirkuit perlombaan balap, memiliki frame ramping mengutamakan aerodinamis untuk pembalap, sepeda ringan dari pada jenis sepeda onroad ataupun offroad lainnya</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#merk_sepeda"/>
+        <NamedIndividual IRI="#reebok"/>
+        <Literal datatypeIRI="&xsd;string">reebok</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#merk_sepeda"/>
+        <NamedIndividual IRI="#santaCruz"/>
+        <Literal datatypeIRI="&xsd;string">santa Cruz</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#jenis"/>
+        <NamedIndividual IRI="#sepeda_balap"/>
+        <Literal datatypeIRI="&xsd;string">onroad</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nama_sepeda"/>
+        <NamedIndividual IRI="#sepeda_balap"/>
+        <Literal datatypeIRI="&xsd;string">sepeda balap</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#jenis"/>
+        <NamedIndividual IRI="#sepeda_bmx"/>
+        <Literal datatypeIRI="&xsd;string">onroad</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nama_sepeda"/>
+        <NamedIndividual IRI="#sepeda_bmx"/>
+        <Literal datatypeIRI="&xsd;string">sepeda bmx</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#jenis"/>
+        <NamedIndividual IRI="#sepeda_fixie"/>
+        <Literal datatypeIRI="&xsd;string">onroad</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nama_sepeda"/>
+        <NamedIndividual IRI="#sepeda_fixie"/>
+        <Literal datatypeIRI="&xsd;string">sepeda fixie</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#jenis"/>
+        <NamedIndividual IRI="#sepeda_gunung"/>
+        <Literal datatypeIRI="&xsd;string">offroad</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nama_sepeda"/>
+        <NamedIndividual IRI="#sepeda_gunung"/>
+        <Literal datatypeIRI="&xsd;string">sepeda gunung</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#jenis"/>
+        <NamedIndividual IRI="#sepeda_lipat"/>
+        <Literal datatypeIRI="&xsd;string">onroad</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nama_sepeda"/>
+        <NamedIndividual IRI="#sepeda_lipat"/>
+        <Literal datatypeIRI="&xsd;string">sepeda lipat</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#jenis"/>
+        <NamedIndividual IRI="#sepeda_onthel"/>
+        <Literal datatypeIRI="&xsd;string">onroad</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nama_sepeda"/>
+        <NamedIndividual IRI="#sepeda_onthel"/>
+        <Literal datatypeIRI="&xsd;string">sepeda onthel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#jenis"/>
+        <NamedIndividual IRI="#sepeda_touring"/>
+        <Literal datatypeIRI="&xsd;string">offroad</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nama_sepeda"/>
+        <NamedIndividual IRI="#sepeda_touring"/>
+        <Literal datatypeIRI="&xsd;string">sepeda touring</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#merk_sepeda"/>
+        <NamedIndividual IRI="#tabibitho"/>
+        <Literal datatypeIRI="&xsd;string">tabibitho</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#merk_sepeda"/>
+        <NamedIndividual IRI="#trek"/>
+        <Literal datatypeIRI="&xsd;string">trek</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#merk_sepeda"/>
+        <NamedIndividual IRI="#united"/>
+        <Literal datatypeIRI="&xsd;string">united</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#karakter"/>
+        <NamedIndividual IRI="#wimcycle"/>
+        <Literal datatypeIRI="&xsd;string">casual enjoy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#merk_sepeda"/>
+        <NamedIndividual IRI="#wimcycle"/>
+        <Literal datatypeIRI="&xsd;string">wimcycle</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#memilikiMerk"/>
+        <Class IRI="#sepeda"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#memilikiMerk"/>
+        <Class IRI="#merk"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#jenis"/>
+        <Class IRI="#sepeda"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#karakter"/>
+        <Class IRI="#karakteristik"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#merk_sepeda"/>
+        <Class IRI="#merk"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nama_sepeda"/>
+        <Class IRI="#sepeda"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#jenis"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#karakter"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#merk_sepeda"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nama_sepeda"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,484 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY untitled-ontology-23 "http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:untitled-ontology-23="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#">
+    <Ontology rdf:about="http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23">
+        <rdfs:comment>PREFIX : &lt;http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+SELECT ?nama_sepeda ?jenis?merk_sepeda
+	WHERE { ?sepeda:nama_sepeda ?nama_sepeda. ?sepeda:jenis ?jenis.?merk:merk_sepeda?merk_sepeda. }</rdfs:comment>
+        <rdfs:comment>PREFIX : &lt;http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+SELECT ?karakter?nama_sepeda ?jenis?merk_sepeda
+	WHERE { ?sepeda:nama_sepeda ?nama_sepeda. ?sepeda:jenis ?jenis.?sepeda:memilikiMerk?merk.?merk:merk_sepeda?merk_sepeda.?sepeda:memilikiKarakteristik?karakteristik.?karakteristik:karakter?karakter. }</rdfs:comment>
+        <rdfs:comment>PREFIX : &lt;http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+SELECT ?nama_sepeda ?jenis?merk_sepeda
+	WHERE { ?sepeda:nama_sepeda ?nama_sepeda. ?sepeda:jenis ?jenis.?sepeda:memilikiMerk?merk.?merk:merk_sepeda?merk_sepeda. }</rdfs:comment>
+    </Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#diProduksi -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-23;diProduksi">
+        <rdfs:domain rdf:resource="&untitled-ontology-23;merk"/>
+        <rdfs:range rdf:resource="&untitled-ontology-23;produsen"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#memilikiKarakteristik -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-23;memilikiKarakteristik">
+        <rdfs:range rdf:resource="&untitled-ontology-23;karakteristik"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-23;sepeda"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#memilikiMerk -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-23;memilikiMerk">
+        <rdfs:range rdf:resource="&untitled-ontology-23;merk"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-23;sepeda"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#jenis -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-23;jenis">
+        <rdfs:domain rdf:resource="&untitled-ontology-23;sepeda"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#karakter -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-23;karakter">
+        <rdfs:domain rdf:resource="&untitled-ontology-23;karakteristik"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#merk_sepeda -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-23;merk_sepeda">
+        <rdfs:domain rdf:resource="&untitled-ontology-23;merk"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#nama_sepeda -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-23;nama_sepeda">
+        <rdfs:domain rdf:resource="&untitled-ontology-23;sepeda"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#produsen_sepeda -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-23;produsen_sepeda"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#dalamNegeri -->
+
+    <Class rdf:about="&untitled-ontology-23;dalamNegeri">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-23;produsen"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#karakteristik -->
+
+    <Class rdf:about="&untitled-ontology-23;karakteristik"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#luarNegeri -->
+
+    <Class rdf:about="&untitled-ontology-23;luarNegeri">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-23;produsen"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#merk -->
+
+    <Class rdf:about="&untitled-ontology-23;merk"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#offroad -->
+
+    <Class rdf:about="&untitled-ontology-23;offroad">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-23;sepeda"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#onroad -->
+
+    <Class rdf:about="&untitled-ontology-23;onroad">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-23;sepeda"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#produsen -->
+
+    <Class rdf:about="&untitled-ontology-23;produsen"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda -->
+
+    <Class rdf:about="&untitled-ontology-23;sepeda"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#amerika_serikat -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-23;amerika_serikat">
+        <rdf:type rdf:resource="&untitled-ontology-23;luarNegeri"/>
+        <untitled-ontology-23:produsen_sepeda rdf:datatype="&xsd;string">amerika serikat</untitled-ontology-23:produsen_sepeda>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#casual -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-23;casual">
+        <rdf:type rdf:resource="&untitled-ontology-23;karakteristik"/>
+        <untitled-ontology-23:karakter rdf:datatype="&xsd;string">biasa digunakan untuk dikendarai di jalan kota kota dan lebih mementingkan ke desain simple tanpa banyak atribut</untitled-ontology-23:karakter>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#federal -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-23;federal">
+        <rdf:type rdf:resource="&untitled-ontology-23;merk"/>
+        <untitled-ontology-23:merk_sepeda rdf:datatype="&xsd;string">federal</untitled-ontology-23:merk_sepeda>
+        <untitled-ontology-23:diProduksi rdf:resource="&untitled-ontology-23;indonesia"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#freestyle -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-23;freestyle">
+        <rdf:type rdf:resource="&untitled-ontology-23;karakteristik"/>
+        <untitled-ontology-23:karakter rdf:datatype="&xsd;string">sering digunakan untuk freestyer dalam berakrobat di arena</untitled-ontology-23:karakter>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#giant -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-23;giant">
+        <rdf:type rdf:resource="&untitled-ontology-23;merk"/>
+        <untitled-ontology-23:merk_sepeda rdf:datatype="&xsd;string">giant</untitled-ontology-23:merk_sepeda>
+        <untitled-ontology-23:diProduksi rdf:resource="&untitled-ontology-23;taiwan"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#indonesia -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-23;indonesia">
+        <rdf:type rdf:resource="&untitled-ontology-23;dalamNegeri"/>
+        <untitled-ontology-23:produsen_sepeda rdf:datatype="&xsd;string">Indonesia</untitled-ontology-23:produsen_sepeda>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#klasik -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-23;klasik">
+        <rdf:type rdf:resource="&untitled-ontology-23;karakteristik"/>
+        <untitled-ontology-23:karakter rdf:datatype="&xsd;string">terdapat boncengan dan identik desain kuno,</untitled-ontology-23:karakter>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#modern_kuat -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-23;modern_kuat">
+        <rdf:type rdf:resource="&untitled-ontology-23;karakteristik"/>
+        <untitled-ontology-23:karakter rdf:datatype="&xsd;string">desain terlihat modern di desain dengan teknologi dan untuk onderdil sepeda tahan disegala medan terjal</untitled-ontology-23:karakter>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#pasific -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-23;pasific">
+        <rdf:type rdf:resource="&untitled-ontology-23;merk"/>
+        <untitled-ontology-23:merk_sepeda rdf:datatype="&xsd;string">pasific</untitled-ontology-23:merk_sepeda>
+        <untitled-ontology-23:diProduksi rdf:resource="&untitled-ontology-23;indonesia"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#polygon -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-23;polygon">
+        <rdf:type rdf:resource="&untitled-ontology-23;merk"/>
+        <untitled-ontology-23:karakter rdf:datatype="&xsd;string">kuat dan modern</untitled-ontology-23:karakter>
+        <untitled-ontology-23:merk_sepeda rdf:datatype="&xsd;string">polygon</untitled-ontology-23:merk_sepeda>
+        <untitled-ontology-23:diProduksi rdf:resource="&untitled-ontology-23;indonesia"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#race -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-23;race">
+        <rdf:type rdf:resource="&untitled-ontology-23;karakteristik"/>
+        <untitled-ontology-23:karakter rdf:datatype="&xsd;string">dipakai untuk sirkuit perlombaan balap, memiliki frame ramping mengutamakan aerodinamis untuk pembalap, sepeda ringan dari pada jenis sepeda onroad ataupun offroad lainnya</untitled-ontology-23:karakter>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#reebok -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-23;reebok">
+        <rdf:type rdf:resource="&untitled-ontology-23;merk"/>
+        <untitled-ontology-23:produsen_sepeda rdf:datatype="&xsd;string">indonesia</untitled-ontology-23:produsen_sepeda>
+        <untitled-ontology-23:merk_sepeda rdf:datatype="&xsd;string">reebok</untitled-ontology-23:merk_sepeda>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#santaCruz -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-23;santaCruz">
+        <rdf:type rdf:resource="&untitled-ontology-23;merk"/>
+        <untitled-ontology-23:merk_sepeda rdf:datatype="&xsd;string">santa Cruz</untitled-ontology-23:merk_sepeda>
+        <untitled-ontology-23:diProduksi rdf:resource="&untitled-ontology-23;amerika_serikat"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_balap -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-23;sepeda_balap">
+        <rdf:type rdf:resource="&untitled-ontology-23;onroad"/>
+        <untitled-ontology-23:jenis rdf:datatype="&xsd;string">onroad</untitled-ontology-23:jenis>
+        <untitled-ontology-23:nama_sepeda rdf:datatype="&xsd;string">sepeda balap</untitled-ontology-23:nama_sepeda>
+        <untitled-ontology-23:memilikiMerk rdf:resource="&untitled-ontology-23;federal"/>
+        <untitled-ontology-23:memilikiKarakteristik rdf:resource="&untitled-ontology-23;race"/>
+        <untitled-ontology-23:memilikiMerk rdf:resource="&untitled-ontology-23;trek"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_bmx -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-23;sepeda_bmx">
+        <rdf:type rdf:resource="&untitled-ontology-23;onroad"/>
+        <untitled-ontology-23:jenis rdf:datatype="&xsd;string">onroad</untitled-ontology-23:jenis>
+        <untitled-ontology-23:nama_sepeda rdf:datatype="&xsd;string">sepeda bmx</untitled-ontology-23:nama_sepeda>
+        <untitled-ontology-23:memilikiKarakteristik rdf:resource="&untitled-ontology-23;freestyle"/>
+        <untitled-ontology-23:memilikiMerk rdf:resource="&untitled-ontology-23;pasific"/>
+        <untitled-ontology-23:memilikiMerk rdf:resource="&untitled-ontology-23;reebok"/>
+        <untitled-ontology-23:memilikiMerk rdf:resource="&untitled-ontology-23;tabibitho"/>
+        <untitled-ontology-23:memilikiMerk rdf:resource="&untitled-ontology-23;united"/>
+        <untitled-ontology-23:memilikiMerk rdf:resource="&untitled-ontology-23;wimcycle"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_fixie -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-23;sepeda_fixie">
+        <rdf:type rdf:resource="&untitled-ontology-23;onroad"/>
+        <untitled-ontology-23:jenis rdf:datatype="&xsd;string">onroad</untitled-ontology-23:jenis>
+        <untitled-ontology-23:nama_sepeda rdf:datatype="&xsd;string">sepeda fixie</untitled-ontology-23:nama_sepeda>
+        <untitled-ontology-23:memilikiKarakteristik rdf:resource="&untitled-ontology-23;casual"/>
+        <untitled-ontology-23:memilikiMerk rdf:resource="&untitled-ontology-23;federal"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_gunung -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-23;sepeda_gunung">
+        <rdf:type rdf:resource="&untitled-ontology-23;offroad"/>
+        <untitled-ontology-23:jenis rdf:datatype="&xsd;string">offroad</untitled-ontology-23:jenis>
+        <untitled-ontology-23:nama_sepeda rdf:datatype="&xsd;string">sepeda gunung</untitled-ontology-23:nama_sepeda>
+        <untitled-ontology-23:memilikiKarakteristik rdf:resource="&untitled-ontology-23;modern_kuat"/>
+        <untitled-ontology-23:memilikiMerk rdf:resource="&untitled-ontology-23;polygon"/>
+        <untitled-ontology-23:memilikiMerk rdf:resource="&untitled-ontology-23;wimcycle"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_lipat -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-23;sepeda_lipat">
+        <rdf:type rdf:resource="&untitled-ontology-23;onroad"/>
+        <untitled-ontology-23:jenis rdf:datatype="&xsd;string">onroad</untitled-ontology-23:jenis>
+        <untitled-ontology-23:nama_sepeda rdf:datatype="&xsd;string">sepeda lipat</untitled-ontology-23:nama_sepeda>
+        <untitled-ontology-23:memilikiKarakteristik rdf:resource="&untitled-ontology-23;casual"/>
+        <untitled-ontology-23:memilikiMerk rdf:resource="&untitled-ontology-23;pasific"/>
+        <untitled-ontology-23:memilikiMerk rdf:resource="&untitled-ontology-23;polygon"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_onthel -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-23;sepeda_onthel">
+        <rdf:type rdf:resource="&untitled-ontology-23;onroad"/>
+        <untitled-ontology-23:jenis rdf:datatype="&xsd;string">onroad</untitled-ontology-23:jenis>
+        <untitled-ontology-23:nama_sepeda rdf:datatype="&xsd;string">sepeda onthel</untitled-ontology-23:nama_sepeda>
+        <untitled-ontology-23:memilikiMerk rdf:resource="&untitled-ontology-23;federal"/>
+        <untitled-ontology-23:memilikiKarakteristik rdf:resource="&untitled-ontology-23;klasik"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#sepeda_touring -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-23;sepeda_touring">
+        <rdf:type rdf:resource="&untitled-ontology-23;offroad"/>
+        <untitled-ontology-23:jenis rdf:datatype="&xsd;string">offroad</untitled-ontology-23:jenis>
+        <untitled-ontology-23:nama_sepeda rdf:datatype="&xsd;string">sepeda touring</untitled-ontology-23:nama_sepeda>
+        <untitled-ontology-23:memilikiKarakteristik rdf:resource="&untitled-ontology-23;modern_kuat"/>
+        <untitled-ontology-23:memilikiMerk rdf:resource="&untitled-ontology-23;polygon"/>
+        <untitled-ontology-23:memilikiMerk rdf:resource="&untitled-ontology-23;santaCruz"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#tabibitho -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-23;tabibitho">
+        <rdf:type rdf:resource="&untitled-ontology-23;merk"/>
+        <untitled-ontology-23:merk_sepeda rdf:datatype="&xsd;string">tabibitho</untitled-ontology-23:merk_sepeda>
+        <untitled-ontology-23:diProduksi rdf:resource="&untitled-ontology-23;indonesia"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#taiwan -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-23;taiwan">
+        <rdf:type rdf:resource="&untitled-ontology-23;luarNegeri"/>
+        <untitled-ontology-23:produsen_sepeda rdf:datatype="&xsd;string">taiwan</untitled-ontology-23:produsen_sepeda>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#trek -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-23;trek">
+        <rdf:type rdf:resource="&untitled-ontology-23;merk"/>
+        <untitled-ontology-23:karakter rdf:datatype="&xsd;string">race</untitled-ontology-23:karakter>
+        <untitled-ontology-23:merk_sepeda rdf:datatype="&xsd;string">trek</untitled-ontology-23:merk_sepeda>
+        <untitled-ontology-23:diProduksi rdf:resource="&untitled-ontology-23;amerika_serikat"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#united -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-23;united">
+        <rdf:type rdf:resource="&untitled-ontology-23;merk"/>
+        <untitled-ontology-23:merk_sepeda rdf:datatype="&xsd;string">united</untitled-ontology-23:merk_sepeda>
+        <untitled-ontology-23:diProduksi rdf:resource="&untitled-ontology-23;indonesia"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2021/0/untitled-ontology-23#wimcycle -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-23;wimcycle">
+        <rdf:type rdf:resource="&untitled-ontology-23;merk"/>
+        <untitled-ontology-23:karakter rdf:datatype="&xsd;string">casual enjoy</untitled-ontology-23:karakter>
+        <untitled-ontology-23:merk_sepeda rdf:datatype="&xsd;string">wimcycle</untitled-ontology-23:merk_sepeda>
+        <untitled-ontology-23:diProduksi rdf:resource="&untitled-ontology-23;indonesia"/>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
